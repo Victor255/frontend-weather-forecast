@@ -8,14 +8,14 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="jjj">
     <meta name="author" content="">
-    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+    <link rel="icon" href="http://thumbs.dreamstime.com/x/personaje-de-dibujos-animados-feliz-de-la-nube-36040377.jpg">
 
-    <title>Cognits Blog</title>
+    <title>Weather Forecast</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/libs/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/styles.css" rel="stylesheet">
@@ -26,18 +26,77 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <!---->
 
 </head>
 
-  <body>
+    <body>
 
+        <p class="title">Weather Forecast</p>
 
+        <div class="to-hide to-left">
+            <form id="input-reset">
+                <input class="input" id="country" type="text" name=" " value="" placeholder="Country..."/> <br>
+                <input class="input" id="state" type="text" name=" " value="" placeholder="State..."/>
+            </form>
+        </div>
+        <div class="to-hide to-left">
+            <form>
+                <input type="radio" name="temperature" value="fahrenheit" checked> °F
+                <input type="radio" name="temperature" value="celsius"> °C <br>
+            </form>
+        </div>
+
+        <button id="SearchWeather" class="to-hide button to-left">Search</button>
+
+        <div class="to-show">
+            <p id="nameCity" class="nameCity"></p>
+        </div>
+
+        <div class="clear-both to-show">
+            <div class="conditions">
+                <div>
+                    <p id="weather" class="black"></p>
+                </div>
+                <p id="icon" class="icon"></p>
+                <p id="temperature" class="font"></p>
+            </div>
+            <div class="conditions">
+                <p class="black hide">Wind</p>
+                <p id="wind" class="font"></p>
+            </div>
+            <div class="conditions">
+                <p class="black hide">Humidity</p>
+                <p id="humidity" class="font"></p>
+            </div>
+        </div>
+
+        <div class="clear-both to-show">
+            <div class="conditions">
+                <p class="black hide">Latitude</p>
+                <p id="latitude" class="font"></p>
+            </div>
+            <div class="conditions">
+                <p class="black hide">Elevation</p>
+                <p id="elevation" class="font"></p>
+            </div>
+            <div class="conditions">
+                <p class="black hide">Longitude</p>
+                <p id="longitude" class="font"></p>
+            </div>
+        </div>
+        <div class="to-show">
+            <div id="date" class="date"></div>
+            <button id="new-search" class="hide button new-search">New Search</button>
+        </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/libs/jquery-2.1.1.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <script src="js/libs/bootstrap.js"></script>
 
-  </body>
+
+    </body>
 </html>

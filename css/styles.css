@@ -1,0 +1,82 @@
+body {
+    background:  url(https://image.freepik.com/foto-gratis/la-naturaleza-de-verano-dia-cielo-nubes-mullidas_121-88523.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.title {
+    text-align: center;
+    font-size: 4em;
+    font-size: 90px;
+    font-family: cursive;
+}
+
+.input {
+    height: 40px;
+    width: 20%;
+    display: block;
+    text-align: center;
+}
+
+.nameCity {
+    color: black;
+    font-size: 50px;
+    margin-top: 1%;
+    text-align: center;
+}
+
+.conditions {
+    float: left;
+    border-radius: 10px;
+    text-align: center;
+    width: 33%;
+}
+
+.font {
+    color: black;
+    font-family: Arial;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+.black {
+    color: black;
+    text-align: center;
+    font-size: 30px;
+}
+
+.hide {
+    display: none;
+}
+
+.clear-both {
+    width: 100%;
+    text-align: center;
+    clear: both;
+}
+
+.date {
+    font-size: 25px;
+    color: black;
+    margin-left: 6%;
+    margin-top: 200px;
+}
+
+.new-search {
+    float: right;
+    margin-right: 30%;
+    margin-top: -2%;
+}
+
+.button {
+    background-color: transparent;
+    color: black;
+}
+
+.to-left {
+    margin-left: 5%;
+    margin-top: 1%;
+}
