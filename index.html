@@ -32,10 +32,11 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
 
     <body>
 
+        <p class="cognits">Cognits</p>
         <p class="title">Weather Forecast</p>
 
         <div class="to-hide to-left">
-            <form id="input-reset">
+            <form id="inputs">
                 <input class="input" id="country" type="text" name=" " value="" placeholder="Country..."/> <br>
                 <input class="input" id="state" type="text" name=" " value="" placeholder="State..."/>
             </form>
@@ -49,43 +50,43 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
 
         <button id="SearchWeather" class="to-hide button to-left">Search</button>
 
-        <div class="to-show">
-            <p id="nameCity" class="nameCity"></p>
+        <div class="see">
+            <p id="city" class="city"></p>
         </div>
 
-        <div class="clear-both to-show">
-            <div class="conditions">
+        <div class="clear see">
+            <div class="states">
                 <div>
                     <p id="weather" class="black"></p>
                 </div>
                 <p id="icon" class="icon"></p>
                 <p id="temperature" class="font"></p>
             </div>
-            <div class="conditions">
+            <div class="states">
                 <p class="black hide">Wind</p>
                 <p id="wind" class="font"></p>
             </div>
-            <div class="conditions">
+            <div class="states">
                 <p class="black hide">Humidity</p>
                 <p id="humidity" class="font"></p>
             </div>
         </div>
 
-        <div class="clear-both to-show">
-            <div class="conditions">
+        <div class="clear see">
+            <div class="states">
                 <p class="black hide">Latitude</p>
                 <p id="latitude" class="font"></p>
             </div>
-            <div class="conditions">
+            <div class="states">
                 <p class="black hide">Elevation</p>
                 <p id="elevation" class="font"></p>
             </div>
-            <div class="conditions">
+            <div class="states">
                 <p class="black hide">Longitude</p>
                 <p id="longitude" class="font"></p>
             </div>
         </div>
-        <div class="to-show">
+        <div class="see">
             <div id="date" class="date"></div>
             <button id="new-search" class="hide button new-search">New Search</button>
         </div>

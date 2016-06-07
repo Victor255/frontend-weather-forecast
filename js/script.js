@@ -30,7 +30,7 @@ $(document).ready(function() {
 					var longitude = json_parsed["current_observation"]["display_location"]["longitude"];
 					var elevation = json_parsed["current_observation"]["observation_location"]["elevation"];
 					$(".to-hide").addClass("hide");
-					$("#nameCity").html(city);
+					$("#city").html(city);
 					$("#weather").html(weather);
 					$("#icon").html("<img src" + "=" + "'" + icon + "'" + "/>");
 					$(".black").removeClass("hide");
@@ -56,7 +56,7 @@ $(document).ready(function() {
 	$("#new-search").click(function(){
 		location.reload();
 		$(".to-hide").removeClass("hide");
-		$(".to-show").addClass("hide");
+		$(".see").addClass("hide");
 
 	});
 });

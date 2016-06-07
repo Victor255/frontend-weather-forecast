@@ -7,40 +7,46 @@ body {
 
 .title {
     text-align: center;
-    font-size: 4em;
-    font-size: 90px;
-    font-family: cursive;
+    font-size: 5em;
+    font-size: 100px;
+    font-family: Times New Roman;
+    color: black;
 }
 
+.cognits {
+    font-family: Times New Roman;
+    color: black;
+    font-size: 30px;
+    margin-left: 120px;   
+}
 .input {
-    height: 40px;
+    height: 45px;
     width: 20%;
     display: block;
     text-align: center;
 }
 
-.nameCity {
+.city {
     color: black;
     font-size: 50px;
     margin-top: 1%;
     text-align: center;
 }
 
-.conditions {
+.states {
     float: left;
     border-radius: 10px;
     text-align: center;
     width: 33%;
+    font-family: small-caps;
 }
 
 .font {
     color: black;
-    font-family: Arial;
+    font-family: small-caps;
     font-size: 20px;
     text-align: center;
 }
-
-
 
 .black {
     color: black;
@@ -48,27 +54,29 @@ body {
     font-size: 30px;
 }
 
-.hide {
-    display: none;
-}
-
-.clear-both {
+.clear {
     width: 100%;
     text-align: center;
     clear: both;
+    margin-left: 20px;
 }
 
 .date {
-    font-size: 25px;
+    font-size: 35px;
+    font-family: oblique;
     color: black;
     margin-left: 6%;
     margin-top: 200px;
 }
 
+.hide {
+    display: none;
+}
+
 .new-search {
     float: right;
-    margin-right: 30%;
-    margin-top: -2%;
+    margin-right: 20%;
+    margin-top: -3%;
 }
 
 .button {
