@@ -19,47 +19,6 @@ body {
     font-size: 30px;
     margin-left: 120px;   
 }
-.input {
-    height: 45px;
-    width: 20%;
-    display: block;
-    text-align: center;
-}
-
-.city {
-    color: black;
-    font-size: 50px;
-    margin-top: 1%;
-    text-align: center;
-}
-
-.states {
-    float: left;
-    border-radius: 10px;
-    text-align: center;
-    width: 33%;
-    font-family: small-caps;
-}
-
-.font {
-    color: black;
-    font-family: small-caps;
-    font-size: 20px;
-    text-align: center;
-}
-
-.black {
-    color: black;
-    text-align: center;
-    font-size: 30px;
-}
-
-.clear {
-    width: 100%;
-    text-align: center;
-    clear: both;
-    margin-left: 20px;
-}
 
 .date {
     font-size: 35px;
@@ -87,4 +46,46 @@ body {
 .to-left {
     margin-left: 5%;
     margin-top: 1%;
+}
+
+.font {
+    color: black;
+    font-family: small-caps;
+    font-size: 20px;
+    text-align: center;
+}
+
+.black {
+    color: black;
+    text-align: center;
+    font-size: 30px;
+}
+
+.clear {
+    width: 100%;
+    text-align: center;
+    clear: both;
+    margin-left: 20px;
+}
+
+.input {
+    height: 45px;
+    width: 20%;
+    display: block;
+    text-align: center;
+}
+
+.city {
+    color: black;
+    font-size: 50px;
+    margin-top: 1%;
+    text-align: center;
+}
+
+.states {
+    float: left;
+    border-radius: 10px;
+    text-align: center;
+    width: 33%;
+    font-family: small-caps;
 }

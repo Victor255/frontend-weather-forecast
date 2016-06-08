@@ -2,6 +2,7 @@
 
 $(document).ready(function() {
 
+	/*this function will search for the name and the country entered by the user*/
 	$("#SearchWeather").click(function(){
 		var country = $("#country").val();
 		var state = $("#state").val();
@@ -13,13 +14,15 @@ $(document).ready(function() {
 				url : "http://api.wunderground.com/api/cde8c106c3396508/conditions/q/" + country + "/" + state + ".json",
 				data : "jsonp",
 
+				/*This verifies if the names entered are incorrect*/
 				success : function(json_parsed){
 					try {
 						var city = json_parsed["current_observation"]["display_location"]["full"];
 					} catch(error) {
-						alert("Write the correct names please ");
+						alert("Write the correct names please!");
 						location.reload();
 					}
+					/*This obtains data from the api json*/
 					var weather = json_parsed["current_observation"]["weather"];
 					var icon = json_parsed["current_observation"]["icon_url"];
 					var wind = json_parsed["current_observation"]["wind_kph"];
@@ -29,6 +32,7 @@ $(document).ready(function() {
 					var latitude = json_parsed["current_observation"]["display_location"]["latitude"];
 					var longitude = json_parsed["current_observation"]["display_location"]["longitude"];
 					var elevation = json_parsed["current_observation"]["observation_location"]["elevation"];
+					/*this hides several entries*/
 					$(".to-hide").addClass("hide");
 					$("#city").html(city);
 					$("#weather").html(weather);
@@ -49,10 +53,11 @@ $(document).ready(function() {
 				}
 			});
 		} else {
-			alert("Insert Country and State")
+			alert("Insert a Country and State plase!")
 		}
 	});
 
+	/*This function will a new search*/ 
 	$("#new-search").click(function(){
 		location.reload();
 		$(".to-hide").removeClass("hide");
